@@ -1,0 +1,48 @@
+<link rel="stylesheet" type="text/css" href="spells\spells.css">
+<div class="grid-item-spells" id="grid-item-spells" style="display: block;">
+    <h1>Spells</h1>
+
+    <div id="spell_info" class="spell_popup" style="display: none;">
+        <h2 id="spell_name">Spell Name</h2>
+        <p id="spell_level"></p>
+        <p id="spell_school"></p>
+        <p id="spell_ritual"></p>
+        <p id="spell_time"></p>
+        <p id="spell_range"></p>
+        <p id="spell_components"></p>
+        <p id="spell_duration"></p>
+        <p id="spell_description"></p>
+        <p id="spell_source"></p>
+        <p id="spell_author"></p>
+        <p id="spell_classes"></p>
+    </div>
+
+    <div id="spell_filter" class="spell_popup" style="display: none;">
+        <h2>Spell Levels</h2>
+        <button class="filter_button" id="fb0">Cantrip</button><button class="filter_button" id="fb1">1st Level</button><button class="filter_button" id="fb2">2nd Level</button><button class="filter_button" id="fb3">3rd Level</button>
+        <button class="filter_button" id="fb4">4th Level</button><button class="filter_button" id="fb5">5th Level</button><button class="filter_button" id="fb6">6th Level</button><button class="filter_button" id="fb7">7th Level</button>
+        <button class="filter_button" id="fb8">8th Level</button><button class="filter_button" id="fb9">9th Level</button>
+        <h2>Spell School</h2>
+        <button class="filter_button" id="fb10">Abjuration</button><button class="filter_button" id="fb11">Conjuration</button><button class="filter_button" id="fb12">Divination</button><button class="filter_button" id="fb13">Enchantment</button>
+        <button class="filter_button" id="fb14">Evocation</button><button class="filter_button" id="fb15">Illusion</button><button class="filter_button" id="fb16">Necromancy</button><button class="filter_button" id="fb17">Transmutation</button>
+    </div>
+
+    <div style="overflow-x:auto;">
+
+    <div id="spell_list_div">
+        <table id="spell_table">
+            <tbody id="tbody_spell_table">
+                <tr class="noselect">
+                    <th>Name</th>
+                    <th>Level</th>
+                    <th>School</th>
+                    <th>Casting Time</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <button id="button1"></button><button id="button2"></button>
+    </div>
+
+    <script src="spells\spellsLogic.js"></script>
+</div>

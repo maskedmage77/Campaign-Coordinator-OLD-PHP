@@ -1,0 +1,97 @@
+.grid-item-chat {
+    background-color: #141414;
+    height: 704px;
+}
+#general_chat_box {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: #0a0a0a;
+    height: 644px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    /* removes scrollbar on firefox */
+    scrollbar-width: none;
+    /* removes scrollbar on IE and Edge */
+    -ms-overflow-style: none;
+}
+
+/* removes scrollbar on chrome, safari, and Opera */
+#general_chat_box::-webkit-scrollbar {
+  display: none;
+}
+#general_chat_box p {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* chat styling */
+.msgUsername {
+    font-weight: bold;
+}
+.msgText {
+    color: #808080;
+}
+.grid-item-chat button {
+    height: 29px;
+    width: 140px;
+    border: 0px;
+    background-color: #343434;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float:right;
+}
+.grid-item-chat input{
+    height: 27px;
+    width: calc(100% - 190px);
+    border: 0px;
+    background-color: #343434;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0;
+}
+
+.roll {
+    color: #808080;
+}
+.roll b {
+    color: #349898;
+}
+.roll h1 {
+    color: #349898;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1375px) {
+    .grid-item-chat {
+        grid-column: span 2;
+}
+@media only screen and (max-width: 875px) {
+    .grid-item-chat {
+        grid-column: span 4;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .grid-item-chat input{
+        font-size: 16px;
+        height: 42px;
+        box-sizing: border-box;
+        width: calc(100% - 170px);
+
+    }
+    .grid-item-chat button {
+        font-size: 16px;
+        height: 42px;
+    }
+}

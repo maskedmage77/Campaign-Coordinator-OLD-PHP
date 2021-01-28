@@ -1,0 +1,68 @@
+<div class="grid-item-spells-create" id="grid-item-spells-create" style="display: none;">
+
+    <h1>Spell Creation</h1>
+
+    <!-- browser adds extra white space after inputs if they are in a new line in the html -->
+    <form method="post" id="spellsCreate" class="spellsCreate" action="spells\spellsCreate.php">
+        <input type="text" name="spell_name" placeholder="spell name" required/><select required name="spell_school">
+            <option value="" disabled selected hidden>Select Spell School</option>
+            <option value="Abjuration">Abjuration</option>
+            <option value="Conjuration">Conjuration</option>
+            <option value="Divination">Divination</option>
+            <option value="Enchantment">Enchantment</option>
+            <option value="Evocation">Evocation</option>
+            <option value="Illusion">Illusion</option>
+            <option value="Necromancy">Necromancy</option>
+            <option value="Transmutation">Transmutation</option>
+        </select>
+        <select required name="spell_ritual">
+            <option value="" disabled selected hidden>Select if Spell is a Ritual</option>
+            <option value="1">Ritual - Yes</option>
+            <option value="0">Ritual - No</option>
+        </select><select name="spell_level" required>
+                <option value="" disabled selected hidden>Select Spell Level</option>
+                <option value="0">Cantrip</option>
+                <option value="1">Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+                <option value="4">Level 4</option>
+                <option value="5">Level 5</option>
+                <option value="6">Level 6</option>
+                <option value="7">Level 7</option>
+                <option value="8">Level 8</option>
+                <option value="9">Level 9</option>
+        </select>
+        <input type="text" name="spell_time" placeholder="cast time" required/><input type="text" name="spell_range" placeholder="cast range" required/>
+        <input type="text" name="spell_components" placeholder="spell components" required/><input type="text" name="spell_duration" placeholder="spell duration" required/>
+
+        <br />
+        <textarea name="spell_description" placeholder="spell description" required></textarea>
+
+        <select name="spell_source" required>
+                <option value="" disabled selected hidden>Select Spell Source</option>
+                <option value="Homebrew">Homebrew</option>
+                <option value="D&D 5e Player's Handbook">D&D 5e Player's Handbook</option>
+                <option value="D&D 5e Elemental Evil">D&D 5e Elemental Evil</option>
+                <option value="D&D 5e Sword Coast Adventurer's Guide">D&D 5e Sword Coast Adventurer's Guide</option>
+                <option value="D&D 5e Xanathars Guide to Everything">D&D 5e Xanathars Guide to Everything</option>
+                <option value="Maskelyne's Guide to Magic">Maskelyne's Guide to Magic</option>
+        </select><select name="spell_classes" required multiple>
+            <option value="" disabled selected hidden>Select Classes</option>
+            <option value="bard">Bard</option>
+            <option value="cleric">Cleric</option>
+            <option value="druid">Druid</option>
+            <option value="paladin">Paladin</option>
+            <option value="ranger">Ranger</option>
+            <option value="sorcerer">Sorcerer</option>
+            <option value="warlock">Warlock</option>
+            <option value="wizard">Wizard</option>
+        </select>
+        <button type="submit" id="spell-create-button" onclick="loadList()">Create Spell</button>
+
+
+
+
+    </form>
+    <button class="back-button" onclick="toggleSpellsCreateUi()">Back</button>
+    <script src="spells\spellsCreate.js"></script>
+</div>

@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Cambria, Georgia, serif;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.foo {
+     position: fixed;
+     bottom: 0;
+     right: 0;
+     padding: 20px;
+}
+
+img {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 6s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+      -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+       filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.5));
+       width: 100%;
+
+  }
+
+  50% {
+      -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+      filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+      width: 110%;
+      margin-left: -5%;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-timing-function: ease-in-out;
+}
+
+  100% {
+      -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+      filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.5));
+      width: 100%;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-timing-function: ease-in-out;
+}

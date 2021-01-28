@@ -1,0 +1,17 @@
+This file serves as a reference to all the colors of this website
+
+Font Color:
+#ffffff
+
+Grid-cell background color:
+#141414
+
+Input Colors:
+Default - #343434
+Green - #349834
+Red - #983434
+Blue - #343498
+Cyan - #349898
+Yellow - #989834
+Silver - #989898
+Purple - #983498

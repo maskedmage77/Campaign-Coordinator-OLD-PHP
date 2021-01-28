@@ -1,0 +1,385 @@
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24.5px;
+}
+/* back button */
+.back-button {
+    width: calc(50% - 16px);
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 29px;
+    background-color: #983434;
+    border: 0px;
+    color: white;
+    top: 0px;
+}
+.grid-item-spells {
+    position:relative;
+
+}
+.grid-item-spells-create {
+    position:relative;
+}
+/* spellUi Styling */
+#spell_list_div {
+    overflow-x: auto;
+    height: 604px;
+    scroll-snap-type: y mandatory;
+    /* removes scrollbar on firefox */
+    scrollbar-width: none;
+    /* removes scrollbar on IE and Edge */
+    -ms-overflow-style: none;
+}
+/* removes scrollbar on chrome, safari, and Opera */
+#spell_list_div::-webkit-scrollbar {
+    display: none;
+}
+.grid-item-spells {
+    background-color: #141414;
+    height: 704px;
+}
+.grid-item-spells table {
+    width: 100%;
+    border-spacing:0;
+    position: relative;
+}
+.grid-item-spells th {
+    border-top: solid 2px #343434;
+    border-bottom: solid 2px #343434;
+    width: 25%;
+    position: sticky;
+    top: 0;
+    background-color: #141414;
+}
+.grid-item-spells tr:not(:first-child):hover {
+    background-color: #349898;
+}
+.grid-item-spells td {
+    border-bottom: solid 2px #343434;
+    text-align: center;
+}
+.spell_row:hover {
+    background-color: #349898;
+}
+.grid-item-spells form{
+
+}
+.grid-item-spells label{
+    height:27px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+.grid-item-spells input{
+    height: 27px;
+    width: calc(50% - 36px);
+    border: 0px;
+    background-color: #343434;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0;
+}
+.grid-item-spells button{
+    height: 29px;
+    width: calc(50% - 16px);
+    border: 0px;
+    background-color: #343434;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.grid-item-spells button[type=submit]{
+    background-color: #346734;
+}
+.grid-item-spells textarea{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13.3333px;
+    height: 338px;
+    width: calc(100% - 20px);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    border: 0px;
+    background-color: #343434;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 0;
+    resize: none;
+}
+.grid-item-spells select{
+    height: 29px;
+    width: calc(50% - 16px);
+    border: 0px;
+    background-color: #343434;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+}
+
+/* create spell grid item */
+.grid-item-spells-create {
+    background-color: #141414;
+    height: 704px;
+}
+.spellsCreate button{
+    height: 29px;
+    width: calc(50% - 16px);
+    border: 0px;
+    background-color: #343434;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float:right;
+}
+#ritual{
+    margin-left: 20px;
+    width:27px;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+#ritualBox{
+    width: calc(50% - 10px);
+    display: inline-block;
+}
+.spellsCreate input{
+    height: 27px;
+    width: calc(50% - 36px);
+    border: 0px;
+    background-color: #343434;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0;
+}
+.spellsCreate button[type=submit]{
+    background-color: #346734;
+}
+.spellsCreate textarea{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13.3333px;
+    height: 338px;
+    width: calc(100% - 20px);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    border: 0px;
+    background-color: #343434;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 0;
+    resize: none;
+}
+.spellsCreate select{
+    height: 29px;
+    width: calc(50% - 16px);
+    border: 0px;
+    background-color: #343434;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+}
+.spellsCreate select[multiple] {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.spell_popup {
+    background-color: #141414;
+    width: 100%;
+    height: 604px;
+    position: absolute;
+    z-index: 1;
+    border-top: 2px solid #343434;
+    border-bottom: 2px solid #343434;
+    overflow-x: auto;
+}
+
+/* spell info box */
+#spell_info h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#spell_level {
+    font-style: italic;
+    display: inline;
+    padding-right: 0px;
+    padding-left: 10px;
+
+}
+#spell_school {
+    display: inline;
+    font-style: italic;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+#spell_ritual {
+    display: inline;
+    font-style: italic;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+#spell_time {
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+#spell_range {
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#spell_components {
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#spell_duration {
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#spell_description {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#spell_source {
+    padding-left: 10px;
+}
+#spell_classes {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* spell filter box */
+#spell_filter h2 {
+    text-align: center;
+}
+#spell_filter .filter_button {
+    display: inline-block;
+    background-color: #343434;
+    height: 29px;
+    width: calc(25% - 20px);
+    margin:10px;
+}
+/* button styling */
+.button-red {
+    background-color: #983434 !important;
+}
+.button-green {
+    background-color: #346734 !important;
+}
+.button-blue {
+    background-color: #343498 !important;
+}
+.button-cyan {
+    background-color: #349898 !important;
+}
+
+@media only screen and (max-width: 1700px) {
+    .grid-item-spells, .grid-item-spells-create {
+        grid-column: span 2;
+    }
+
+}
+@media only screen and (max-width: 875px) {
+    .grid-item-spells, .grid-item-spells-create {
+        grid-column: span 4;
+    }
+
+}
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 36.25px;
+    }
+    .back-button {
+        height: 42px;
+        font-size: 16px;
+        position: relative;
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .grid-item-spells {
+        height: auto;
+    }
+    .grid-item-spells input{
+        font-size: 16px;
+        height: 42px;
+        box-sizing: border-box;
+        width: 95%;
+
+    }
+    .grid-item-spells textarea {
+        width: calc(100% - 20px);
+        font-size: 16px;
+    }
+    .grid-item-spells button {
+        font-size: 16px;
+        height: 42px;
+        width: 95%;
+        box-sizing: border-box;
+    }
+    .grid-item-spells select{
+        font-size: 16px;
+        height: 42px;
+        box-sizing: border-box;
+        width: 95%;
+
+    }
+    .spellsCreate input{
+        font-size: 16px;
+        height: 42px;
+        box-sizing: border-box;
+        width: 95%;
+
+    }
+    .spellsCreate textarea {
+        width: calc(100% - 20px);
+        font-size: 16px;
+    }
+    .spellsCreate button {
+        font-size: 16px;
+        height: 42px;
+        width: 95%;
+        box-sizing: border-box;
+    }
+    .spellsCreate select{
+        font-size: 16px;
+        height: 42px;
+        box-sizing: border-box;
+        width: 95%;
+
+    }
+    .grid-item-spells-create {
+        height: auto;
+    }
+    #spell_filter .filter_button {
+        height: 42px;
+        width: calc(50% - 20px);
+    }
+}
